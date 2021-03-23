@@ -399,7 +399,7 @@ footer p{
 .mobile-menu {
   position: fixed;
   top: 28px;
-  left: 15px;
+  left: 20px;
   z-index: 500;
   width: 45px;
   height: 45px;
