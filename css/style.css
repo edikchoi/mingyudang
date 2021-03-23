@@ -9,6 +9,12 @@
   width: 100%;
   text-align: center;
 }
+
+.container_wide {
+  margin: 0 auto;
+  width: 95%;
+}
+
 .container {
   margin: 0 auto;
   width: 80%;
