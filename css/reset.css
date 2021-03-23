@@ -1,0 +1,6 @@
+/* 여백 초기회*/
+body, div, dl, dd, dt, ul, li, ul, ol, h1, h2, h3, h4, h5, h6, form, input,
+    legend, textarea, select, fieldset, p, button {margin: 0; padding: 0;}
+
+    @font-family: 'Noto Serif KR', serif;
+    html, body, h1, h2, h3, h4, h5, h6, li, p, button {font-family:'Noto Serif KR' !important; font-weight: lighter;}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="민규당 바이 버틀러리">
+  <meta name="description" content="서촌에서 만나는 한옥스테이">
+  <meta name="keywords" content="한옥, 한옥스테이, 서울한옥, 서울한옥숙박, 민규당, 민규당바이버틀러리, 게스트하우스, 서울여행">
+  <meta property="og:title" content="민규당 바이 버틀러리">
+  <meta property="og:description" content="서촌에서 만나는 한옥스테이">
+  <meta property="og:image" content="index/ico/intro.png">
+  <link rel="shortcut icon" href="img/favi.png">
+  <title>민규당 바이 버틀러리</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <!-- style -->
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200&display=swap" rel="stylesheet">
+  <!-- font -->
+  <style>
+  @media (max-width: 1024px) {
+    #header {height: 80px;}
+    #reservation {font-size: 16px; margin-top: 28px;}
+    #logo {width: 70px; margin-left: 132px; margin-top: 20px;}
+    .mobile-menu {top: 18px;}
+  }
+  /* 1024px 이하 */
+
+  @media (max-width: 768px) {
+    #header {height: 60px;}
+    #reservation {font-size: 14px; margin-top: 20px;}
+    #logo {width: 55px; margin-left: 68px; margin-top: 14px;}
+    #a_1 p {font-size: 18px;}
+    button {font-size: 16px;}
+    .mobile-menu {top: 8px;}
+  }
+  /* 768px 이하 */
+
+  @media (max-width: 480px) {
+    .container {width: 90%;}
+    #reservation {font-size: 12px; margin-top: -26;}
+    #a_1 p {font-size: 16px;}
+    button {font-size: 14px;}
+    footer p {font-size: 12px;}
+    #logo {margin-left: 54px;}
+    .menuwrap {width: 100%; left: -100%;}
+  }
+  /* 480px 이하 */
+
+  </style>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" crossorigin="anonymous">    
+
+</head>
+<body>
+  <div id="wrap">  
+    <div id="header">
+      <div class="container">
+
+        <button type="button" class="mobile-menu"><i class="fas fa-bars"></i></button>
+
+        <div class="menuwrap">
+            <nav id="menu">
+                <img src="img/logo.png" id="menu-logo">
+                <!-- "메뉴목록 표시" -->
+                <a href="struction.html" class="menu-list">공간</a>    
+                <a href="https://pf.kakao.com/_gfQexb" class="menu-list">예약하기</a>    
+                <a href="guide.html" class="menu-list">이용 안내</a>        
+            </nav>
+        </div>
+
+        <script>
+          document.addEventListener('DOMContentLoaded', function(){
+          document.querySelector(".mobile-menu").addEventListener("click", function(e){
+        if ( document.querySelector('.menuwrap').classList.contains('on') ){
+            //메뉴닫힘
+            document.querySelector('.menuwrap').classList.remove('on');
+            document.querySelector('.mobile-menu i').classList.remove('fa-times')
+            document.querySelector('.mobile-menu i').classList.add('fa-bars');
+        } else {
+            //메뉴펼침
+            document.querySelector('.menuwrap').classList.add('on');
+            document.querySelector('.mobile-menu i').classList.remove('fa-bars');
+            document.querySelector('.mobile-menu i').classList.add('fa-times');
+        }
+        });
+        });
+        </script>
+
+        <!-- slide menu -->
+
+          <img src="img/logo.png" id="logo" onclick="location.href='../민규당/index.html'">
+        <a href="https://pf.kakao.com/_gfQexb" id="reservation">예약하기</a>
+      </div>
+    </div>
+
+    <!-- header -->
+
+    <article>
+      <div id="a_1">
+        <div class="container">
+          <p>오늘도 고생 많으셨습니다.
+          <br>민규당의 문은 열려있습니다.
+          </p>
+          <div id="main-button">
+            <button type="button" onclick="location.href='../민규당/struction.html'">둘러보기</button>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- article -->
+
+    <footer>
+      <p>서울 종로구 자하문로15길 26-9
+        <br>ⓒ 민규당
+      </p>
+    </footer>
+    <!-- footer -->
+
+  </div>
+</body>
+</html>

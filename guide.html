@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="민규당 바이 버틀러리">
+  <meta name="description" content="서촌에서 만나는 한옥스테이">
+  <meta name="keywords" content="한옥, 한옥스테이, 서울한옥, 서울한옥숙박, 민규당, 민규당바이버틀러리, 게스트하우스, 서울여행">
+  <meta property="og:title" content="민규당 바이 버틀러리">
+  <meta property="og:description" content="서촌에서 만나는 한옥스테이">
+  <meta property="og:image" content="index/ico/intro.png">
+  <link rel="shortcut icon" href="img/favi.png">
+  <title>민규당 바이 버틀러리</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <!-- style -->
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200&display=swap" rel="stylesheet">
+  <!-- font -->
+  <style>
+  @media (max-width: 1024px) {
+    #header {height: 80px;}
+    #reservation {font-size: 16px; margin-top: 28px;}
+    #logo {width: 70px; margin-left: 132px; margin-top: 20px;}
+    .mobile-menu {top: 18px;}
+
+    #c_2_1 {width: 100%;}
+    #c_2_2 {width: 100%;}
+    #c_2_3 {width: 100%;}
+    #c_2_4 {width: 100%;}
+    #c_2_5 {width: 100%;}
+    #c_2_6 {width: 100%;}
+    #c_2_7 {width: 100%;}
+  }
+  /* 1024px 이하 */
+
+  @media (max-width: 768px) {
+    #header {height: 60px;}
+    #reservation {font-size: 14px; margin-top: 20px;}
+    #logo {width: 55px; margin-left: 68px; margin-top: 14px;}
+    .mobile-menu {top: 8px;}
+
+    #c_2_1 h2 {font-size: 14px;}
+    #c_2_2 h2 {font-size: 14px;}
+    #c_2_3 h2 {font-size: 14px;}
+    #c_2_4 h2 {font-size: 14px;}
+    #c_2_5 h2 {font-size: 14px;}
+    #c_2_6 h2 {font-size: 14px;}
+    #c_2_7 h2 {font-size: 14px;}
+
+    #c_2_1 p {font-size: 12px;}
+    #c_2_2 p {font-size: 12px;}
+    #c_2_3 p {font-size: 12px;}
+    #c_2_4 p {font-size: 12px;}
+    #c_2_5 p {font-size: 12px;}
+    #c_2_6 p {font-size: 12px;}
+    #c_2_7 p {font-size: 12px;}
+  }
+  /* 768px 이하 */
+
+  @media (max-width: 480px) {
+    .container {width: 90%;}
+    #reservation {font-size: 12px; margin-top: -26;}
+    footer p {font-size: 12px;}
+    #c_1 {height: 812px;}
+    #c_1 p {padding-top: 100%;}
+    #logo {margin-left: 54px;}
+    .menuwrap {width: 100%; left: -100%;}
+  }
+  /* 480px 이하 */
+
+  </style>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" crossorigin="anonymous">    
+
+</head>
+<body>
+  <div id="wrap">
+    <div id="header">
+      <div class="container">
+
+        <button type="button" class="mobile-menu"><i class="fas fa-bars"></i></button>
+
+        <div class="menuwrap">
+            <nav id="menu">
+                <img src="img/logo.png" id="menu-logo">
+                <!-- "메뉴목록 표시" -->
+                <a href="struction.html" class="menu-list">공간</a>    
+                <a href="https://pf.kakao.com/_gfQexb" class="menu-list">예약하기</a>    
+                <a href="guide.html" class="menu-list">이용 안내</a>        
+            </nav>
+        </div>
+
+        <script>
+          document.addEventListener('DOMContentLoaded', function(){
+          document.querySelector(".mobile-menu").addEventListener("click", function(e){
+        if ( document.querySelector('.menuwrap').classList.contains('on') ){
+            //메뉴닫힘
+            document.querySelector('.menuwrap').classList.remove('on');
+            document.querySelector('.mobile-menu i').classList.remove('fa-times')
+            document.querySelector('.mobile-menu i').classList.add('fa-bars');
+        } else {
+            //메뉴펼침
+            document.querySelector('.menuwrap').classList.add('on');
+            document.querySelector('.mobile-menu i').classList.remove('fa-bars');
+            document.querySelector('.mobile-menu i').classList.add('fa-times');
+        }
+        });
+        });
+        </script>
+
+        <!-- slide menu -->
+
+          <img src="img/logo.png" id="logo" onclick="location.href='../민규당/index.html'">
+        <a href="https://pf.kakao.com/_gfQexb" id="reservation">예약하기</a>
+      </div>
+    </div>
+    <!-- header -->
+
+    <article>
+      <div id="c_1">
+        <div class="container">
+          <p>[ 이 용 안 내 ]
+          </p>
+        </div>
+      </div>
+      <div id="c_2">
+        <div class="container">
+          <div id="c_2_1">
+            <h2>가격</h2>
+            <hr color="#363636" size="1" width="100%" align="left">
+            <hr color="#eeeeee" size="1" width="100%" align="left" class="gray_line">
+            <p>1인 요금</p><p>320,000원</p>
+            <hr color="#eeeeee" size="1" width="100%" align="left" class="gray_line">
+            <p>2인 요금 (최대 인원)</p><p>410,000원</p>
+            <hr color="#eeeeee" size="1" width="100%" align="left" class="gray_line">
+          </div>
+          <div id="c_2_2">
+            <h2>예약 및 환불 규정</h2>
+            <hr color="#363636" size="1" width="100%" align="left">
+            <p>· 장기 숙박 이용 가능합니다.
+            <br>· 체크 인 당일 기준 5일 전까지 무료 취소가 가능합니다.
+            <br>· 이후 취소 시, 첫 1박 요금 및 서비스 수수료를 제외한 요금의 50%가 환불됩니다.
+            </p>
+          </div>
+          <div id="c_2_3">
+            <h2>체크 인 - 아웃</h2>
+            <hr color="#363636" size="1" width="100%" align="left">
+            <hr color="#eeeeee" size="1" width="100%" align="left" class="gray_line">
+            <p>체크 인</p><p>15 : 00</p>
+            <hr color="#eeeeee" size="1" width="100%" align="left" class="gray_line">
+            <p>체크 아웃</p><p>11 : 00</p>
+            <hr color="#eeeeee" size="1" width="100%" align="left" class="gray_line">
+          </div>
+          <div id="c_2_4">
+            <h2>편의시설</h2>
+            <hr color="#363636" size="1" width="100%" align="left">
+            <hr color="#eeeeee" size="1" width="100%" align="left" class="gray_line">
+            <p>욕실</p><p>온수, 보디 클렌저, 컨디셔너, 비데, 샴푸, 헤어드라이어, 욕조</p>
+            <hr color="#eeeeee" size="1" width="100%" align="left" class="gray_line">
+            <p>침실 및 세탁 시설</p><p>세탁기, 건조기</p>
+            <hr color="#eeeeee" size="1" width="100%" align="left" class="gray_line">
+            <p>필수품목</p><p>수건, 침대시트, 비누, 화장지, 옷걸이</p>
+            <hr color="#eeeeee" size="1" width="100%" align="left" class="gray_line">
+            <p>엔터테인먼트</p><p>TV</p>
+            <hr color="#eeeeee" size="1" width="100%" align="left" class="gray_line">
+            <p>냉난방</p><p>에어컨, 난방</p>
+            <hr color="#eeeeee" size="1" width="100%" align="left" class="gray_line">
+            <p>인터넷 및 사무공간</p><p>무선 인터넷, 업무 전용 공간</p>
+            <hr color="#eeeeee" size="1" width="100%" align="left" class="gray_line">
+            <p>주방 및 식당</p><p>주방, 전자레인지, 냉장고, 식기류</p>
+            <hr color="#eeeeee" size="1" width="100%" align="left" class="gray_line">
+            <p>기본 조리도구</p><p>냄비, 후라이팬, 기름, 소금, 후추, 가스레인지 또는 인덕션</p>
+            <hr color="#eeeeee" size="1" width="100%" align="left" class="gray_line">
+          </div>
+          <div id="c_2_5">
+            <h2>이용 전 확인사항</h2>
+            <hr color="#363636" size="1" width="100%" align="left">
+            <hr color="#eeeeee" size="1" width="100%" align="left" class="gray_line">
+            <p>침실</p><p>빔프로젝터와 전동스크린을 통하여 넷플릭스, 유튜브 등을 이용할 수 있습니다.</p>
+            <hr color="#eeeeee" size="1" width="100%" align="left" class="gray_line">
+            <p>주방</p><p>실내에서 간단한 취사가 가능합니다.</p>
+            <hr color="#eeeeee" size="1" width="100%" align="left" class="gray_line">
+            <p>촬영 및 이벤트 사전허가</p><p>허가 없는 상업적 촬영 및 이벤트(행사)는 엄격하게 금지됩니다.</p>
+            <hr color="#eeeeee" size="1" width="100%" align="left" class="gray_line">
+            <p>쓰레기 처리</p><p>퇴실 전 쓰레기는 정리 및 분리수거를 부탁드립니다. (일반, 재활용, 음식물)</p>
+            <hr color="#eeeeee" size="1" width="100%" align="left" class="gray_line">          
+            <p>조리불가 음식</p><p>삼겹살, 생선 등의 냄새가 발생하는 재료 및 구이류의 조리는 금지됩니다.</p>
+            <hr color="#eeeeee" size="1" width="100%" align="left" class="gray_line">          
+            <p>전체 금연</p><p>건물 내부 또는 외부에서 흡연시 청소비, 소독비 $300가 부과됩니다.</p>
+            <hr color="#eeeeee" size="1" width="100%" align="left" class="gray_line">          
+            <p>소란 금지</p><p>지나친 소음발생으로 인한 주변민원 접수, 음주로 인한 고성방가 등으로 인하여 이웃들에게 피해를 주는 경우 즉시 강제퇴실 될 수 있으며 이 경우 환불이 절대 불가합니다.</p>
+            <hr color="#eeeeee" size="1" width="100%" align="left" class="gray_line">
+            <p>등록인원 외 출입금지</p><p>
+              손님의 안전, 출입인원 외 출입제한, 도난, 화재방지를 위하여 출입구에 CCTV가 설치 되어 있으나 마당을 포함한 숙소 내부를 비추지 않습니다.</p>
+            <hr color="#eeeeee" size="1" width="100%" align="left" class="gray_line">
+            <p>반려동물 동반 불가</p><p>반려동물을 동반한 입실은 불가능합니다.</p>
+            <hr color="#eeeeee" size="1" width="100%" align="left" class="gray_line">
+            <p>숙소 파손</p><p>숙소를 파손할 경우 파손 규모에 따른 금액을 부과합니다.</p>
+            <hr color="#eeeeee" size="1" width="100%" align="left" class="gray_line">
+            <p>주차 불가</p><p>주차장이 없으니 참고 바라며, 모두의 주차장 앱을 통하여 인근 주차가 가능합니다.</p>
+            <hr color="#eeeeee" size="1" width="100%" align="left" class="gray_line">          
+          </div>
+          <div id="c_2_6">
+            <h2>안전 시설</h2>
+            <hr color="#363636" size="1" width="100%" align="left">
+            <p>· 일산화탄소 경보기, 화재경보기, 소화기, 보안카메라</p>
+          </div>
+          <div id="c_2_7">
+            <h2>오시는 길</h2>
+            <hr color="#363636" size="1" width="100%" align="left">
+            <div class="maps">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3161.9067317756626!2d126.96699091611765!3d37.5808138797953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2bdc93770b7%3A0x23a9415bc82d96bc!2z7ISc7Jq47Yq567OE7IucIOyiheuhnOq1rCDthrXsnbjrj5kg7J6Q7ZWY66y466GcMTXquLggMjYtOQ!5e0!3m2!1sko!2skr!4v1616398886214!5m2!1sko!2skr" width="100%" height="240" style="border:0;" allowfullscreen="" loading="lazy">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- article -->
+
+    <footer>
+      <p>서울 종로구 자하문로15길 26-9
+        <br>ⓒ 민규당
+      </p>
+    </footer>
+    <!-- footer -->
+
+  </div>
+</body>
+</html>
