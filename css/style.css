@@ -383,14 +383,22 @@ button:hover{
 
 footer {
   clear: both;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.sns {
+  margin: 60px 10px 0 10px;
+  width: 24px;
+  cursor: pointer;
 }
 
 footer p{
   text-align: center;
-  padding: 100px 0;
+  padding: 20px 0 60px 0;
   font-size: 14px;
   font-weight: lighter;
-  line-height: 1.6em;
+  line-height: 2em;
   background-color: #ffffff;
 }
 
