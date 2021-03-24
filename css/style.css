@@ -2,7 +2,7 @@
   background-color: #fafafa;
 }
 
-#header {
+header {
   height: 100px;
   background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
